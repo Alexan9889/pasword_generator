@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <form>
+        <p>GENERADOR DE CONTRASEÑAS</p>
+        <div class="long">
+            <h4 class=" text"> </h4>
+            <label for="long">generar contraseña segun especificaciones</label><br>
+            <input tipe ="text" id="long" placeholder ="numero de caracteres (Max 20)" size ="35">
+            <button type ="button" onclick="genContraseña()">generar</button> 
+        </div>
+        <div>
+                <input type="checkbox" value="" name="noMay" id="noMay" class="preferencias"/> No incluir mayusculas
+                <br>
+                <input type="checkbox" value="" name="noMin" id="noMin" class="preferencias"/> No incluir minusculas
+                <br>
+                <input type="checkbox" value="" name="noNum" id="noNum" class="preferencias"/> No incluir numeros
+                <br>
+                <input type="checkbox" value="" name="noEspCar" id="noEspCar" class="preferencias"/> No incluir caracteres especiales
+                <br>
+                <br>
+                <br>    
+        </div> 
+        <div>
+            <button type ="button" onclick="genContraseña()">generar</button> 
+            <label for="long">generar contraseña automaticamente</label><br><br><br>
+        </div>
+
+        <div class="verify">
+            <h4 class=" text"> verificacion</h4>
+            <label for="verify">verificar contraseña</label><br>
+            <input tipe ="text" id="contrVerificar" placeholder ="Ingrese cotraseña" size ="35">
+            <button type ="button" onclick="verContraseña()">verificar</button>
+        </div>
+
+    </form>
+
+    <script src="metods/app.js"></script>
+</body>
+</html>
